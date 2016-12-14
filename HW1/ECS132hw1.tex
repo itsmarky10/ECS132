@@ -1,0 +1,124 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \\documentclass[12pt]\{article\}  \
+\
+\\setlength\{\\oddsidemargin\}\{0.0in\}\
+\\setlength\{\\evensidemargin\}\{0.0in\}\
+\\setlength\{\\topmargin\}\{-0.25in\}\
+\\setlength\{\\headheight\}\{0in\}\
+\\setlength\{\\headsep\}\{0in\}\
+\\setlength\{\\textwidth\}\{6.5in\}\
+\\setlength\{\\textheight\}\{9.25in\}\
+\\setlength\{\\parindent\}\{0in\}\
+\\setlength\{\\parskip\}\{2mm\}\
+\
+\\begin\{document\}\
+ECS 132\
+\
+Homework 1\
+\
+\\section*\{Problem 1\}\
+a. $P(3\\ items\\ in\\ the\\ box)$ \
+\
+\\indent $= P(111\\ or\\ 121\\ or\\ 211\\ or\\ 112)$ \
+\
+\\indent $= P(111)+P(121)+P(211)+P(112)$ \\hfill mailing tube (2.2)\
+\
+\\indent $= P(111\\ and\\ W_\{1\}\\ in\\ Box_\{2\}\\ =\\ 2\\ or\\ 3)+P(121)+P(211)+P(112)$ \
+\
+\\indent $= \\frac\{2\}\{3^4\} + \\frac\{3\}\{3^3\}$\
+\
+\\indent $= \\frac\{11\}\{81\}$\
+\\bigskip\
+\\\\Ultimately there are three items in Box 1, we listed the ways in which the event \{3 items in the box\} could occur. We decided $W\{1\}\\ in\\ box_\{2\}$ has either 2 or 3. \
+\
+b. $P(weight < 4)$\
+\
+$= 1-P(weight = 4)$\
+\
+$= 1-P(1111\\ or\\ 121\\ or\\ 211\\ or\\ 112\\ or\\ 13\\ or\\ 31\\ or\\ 22)$\
+\
+$= 1 - (\\frac\{1\}\{3^4\} + \\frac\{3\}\{3^3\} + \\frac\{3\}\{3^2\})$\
+\
+$= \\frac\{44\}\{81\}$\
+\\bigskip\
+\\\\ Since the total weight in Box 1 is under 4, we listed the ways in which event equal amount of 4. Our goal for that is to find the probability that that the total weight in a box is under 4. \
+\
+c. $P(W_\{1\}\\ of\\ Box_\{2\}\\ = 1)$\
+\
+$=P(weight\\ of\\ Box_\{1\}\\ is\\ 4) \\times P(W_\{1\} = 1)$ \\hfill mailing tube (2.6)\
+\
+$=(\\frac\{1\}\{3^4\}+\\frac\{3\}\{3^3\}+\\frac\{3\}\{3^2\}) \\times \\frac\{1\}\{3\}$\
+\\hfill given $P(weight = 4)$ from part b above. \
+\\\\\
+$=\\frac\{37\}\{81\} \\times \\frac\{1\}\{3\}$ \\hfill by algebra\
+\
+$= \\frac\{37\}\{243\}$\
+\\bigskip\
+\\\\ Mailing tube (2.6) is said to be stochastically independent.\
+\\\\\
+d. $P(W_\{1\}\\ in\\ Box_\{1\} = 1\\ |\\ W_\{1\}\\ in\\ Box_\{2\} = 1)$ \\hfill by definition of A given B\
+\
+$= \\frac\{P(W_\{1\}\\ in\\ Box1\\ and\\ W_\{1\}\\ in\\ Box_\{2\}\\ =\\ 1)\}\{P(W_\{1\}\\ in\\ Box_\{2\}\\ =\\ 1)\}$ \\hfill Mailing tube (2.8)\
+\
+$= \\frac\{P(1111\\ or\\ 121\\ or\\ 112\\ or\\ 13) \\times P(W_\{1\}\\ =\\ 1)\}\{P(W_\{1\}\\ in\\ Box_\{2\} = 1)\}$ \\hfill from part c above in the numerator\
+\
+$= \\frac\{(\\frac\{1\}\{3^4\}+\\frac\{2\}\{3^3\}+\\frac\{1\}\{3^2\}) \\times \\frac\{1\}\{3\}\}\{\\frac\{37\}\{243\}\}$ \\hfill We have given the answer from part c. \
+\
+$= \\frac\{\\frac\{16\}\{243\}\}\{\\frac\{37\}\{243\}\}$\
+\
+$= \\frac\{16\}\{37\}$\
+\
+\\pagebreak\
+\\section*\{Problem 2\}\
+Section 2.11\
+ \
+a. $P(Jack\\ at\\ square\\ 0)$ \
+\
+$=P(sum\\ =\\ 6)$\
+\
+$=P(dice\\ = 6\\ or\\ (dice\\ = 1\\ and\\ bonus\\ = 5))$\
+\
+$=\\frac\{1\}\{6\} + \\frac\{1\}\{6\} \\times \\frac\{1\}\{6\}$\
+\
+$=\\frac\{7\}\{36\}$\
+\\bigskip\
+\
+b. $P(Jill\\ -\\ Jack\\ >=\\ 0)$\
+\
+$= P(non_\{bonus\}\\ or\\ one_\{bonus\}\\ or\\ both_\{bonus\})$\
+\
+$= P(44\\ or\\ 54\\ or\\ 55\\ or\\ 64\\ or\\ 65\\ or\\ 66) + P(jill_\{bonus\}) \\times P(jill>=jack) + P(jack_\{bonus\}) \\times P(jill>=jack) + P(both_\{bonus\}) \\times P(Jill>= Jack)$\
+\\bigskip\
+\
+\
+$For\\ jill_\{bonus\}, jill >= jack, we\\ have\\ 44\\ 54\\ 55\\ 64\\ 65\\ 66\\ 7(4\\ 5\\ 6\\ 7)\\ 8(4\\ 5\\ 6\\ 7\\ 8)\\ and\\ 9(4\\ 5\\ 6\\ 7\\ 8)\\ a\\ total\\ of \\ 1+2+3+4+5+5\\ combinations.$\
+\\bigskip\
+\
+$Similarly,\\ for\\ jack_\{bonus\},\\ we\\ have\\ 44\\ 54\\ 55\\ 64\\ 65\\ 66\\ only\\ six\\ combinations.$\
+\\bigskip\
+\
+$For\\ both_\{bonus\}, there\\ are\\ totally\\ 1+2+3+4+5+6\\ combinations.$\
+\\bigskip\
+\
+$= \\frac\{6\}\{6^2\} + \\frac\{1\}\{6\} \\times \\frac\{1+2+3+4+5+5\}\{6^2\} + \\frac\{1\}\{6\} \\times \\frac\{3+3\}\{6^2\} + \\frac\{1\}\{6^2\} \\times \\frac\{1+2+3+4+5+6\}\{6^2\}$\
+\
+$= \\frac\{131\}\{432\}$\
+\
+\\bigskip\
+\
+c. $P(Neither\\ bonus\\ |\\ Jill\\ =\\ Jack)$\
+\
+$= \\frac\{P(Jill\\ = Jack\\ and\\ neither\\ bonus)\}\{P(Jill = Jack)\}$\
+\
+\\ \\ \\ \\ \\ \\ P(Jill=Jack) is from partb\
+\
+\
+$= \\frac\{\\frac\{3\}\{6^2\}\}\{\\frac\{6\}\{6^4\}+\\frac\{3\}\{6^3\}+\\frac\{5\}\{6^3\}+\\frac\{3\}\{6^2\}\}$\
+\
+$= \\frac\{2\}\{3\}$\
+\\end\{document\}}
